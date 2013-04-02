@@ -1,0 +1,333 @@
+2013/04/01 20:32:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\rest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rest/index.php/api/
+---
+2013/04/01 20:33:43 [error] [php] include(Images.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\xampp\htdocs\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\xampp\htdocs\rest\protected\controllers\ApiController.php(29): spl_autoload_call()
+#1 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionList()
+#2 D:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(287): ApiController->runAction()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#5 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#6 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\xampp\htdocs\rest\index.php(13): CWebApplication->run()
+REQUEST_URI=/rest/index.php/api/images
+in D:\xampp\htdocs\rest\protected\controllers\ApiController.php (29)
+in D:\xampp\htdocs\rest\index.php (13)
+2013/04/01 20:33:44 [error] [php] include(Images.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\xampp\htdocs\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\xampp\htdocs\rest\protected\controllers\ApiController.php(29): spl_autoload_call()
+#1 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionList()
+#2 D:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(287): ApiController->runAction()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#5 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#6 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\xampp\htdocs\rest\index.php(13): CWebApplication->run()
+REQUEST_URI=/rest/index.php/api/images
+in D:\xampp\htdocs\rest\protected\controllers\ApiController.php (29)
+in D:\xampp\htdocs\rest\index.php (13)
+2013/04/01 20:33:51 [error] [exception.CException] exception 'CException' with message 'ApiController and its behaviors do not have a method or closure named "_sendResponse".' in D:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('_sendResponse', Array)
+#1 D:\xampp\htdocs\rest\protected\controllers\ApiController.php(42): ApiController->_sendResponse(200, 'No items where ...')
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionList()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('list')
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/list')
+#8 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\xampp\htdocs\rest\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/rest/index.php/api/images
+---
+2013/04/01 20:34:55 [error] [exception.CException] exception 'CException' with message 'ApiController and its behaviors do not have a method or closure named "_getStatusCodeMessage".' in D:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('_getStatusCodeM...', Array)
+#1 D:\xampp\htdocs\rest\protected\controllers\ApiController.php(69): ApiController->_getStatusCodeMessage(200)
+#2 D:\xampp\htdocs\rest\protected\controllers\ApiController.php(42): ApiController->_sendResponse(200, 'No items where ...')
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionList()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('list')
+#8 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/list')
+#9 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\rest\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/rest/index.php/api/images
+---
+2013/04/01 20:34:56 [error] [exception.CException] exception 'CException' with message 'ApiController and its behaviors do not have a method or closure named "_getStatusCodeMessage".' in D:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('_getStatusCodeM...', Array)
+#1 D:\xampp\htdocs\rest\protected\controllers\ApiController.php(69): ApiController->_getStatusCodeMessage(200)
+#2 D:\xampp\htdocs\rest\protected\controllers\ApiController.php(42): ApiController->_sendResponse(200, 'No items where ...')
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionList()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('list')
+#8 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/list')
+#9 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\rest\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/rest/index.php/api/images
+---
+2013/04/01 20:34:57 [error] [exception.CException] exception 'CException' with message 'ApiController and its behaviors do not have a method or closure named "_getStatusCodeMessage".' in D:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('_getStatusCodeM...', Array)
+#1 D:\xampp\htdocs\rest\protected\controllers\ApiController.php(69): ApiController->_getStatusCodeMessage(200)
+#2 D:\xampp\htdocs\rest\protected\controllers\ApiController.php(42): ApiController->_sendResponse(200, 'No items where ...')
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionList()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('list')
+#8 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/list')
+#9 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\rest\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/rest/index.php/api/images
+---
+2013/04/01 20:34:57 [error] [exception.CException] exception 'CException' with message 'ApiController and its behaviors do not have a method or closure named "_getStatusCodeMessage".' in D:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('_getStatusCodeM...', Array)
+#1 D:\xampp\htdocs\rest\protected\controllers\ApiController.php(69): ApiController->_getStatusCodeMessage(200)
+#2 D:\xampp\htdocs\rest\protected\controllers\ApiController.php(42): ApiController->_sendResponse(200, 'No items where ...')
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionList()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('list')
+#8 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/list')
+#9 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\rest\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/rest/index.php/api/images
+---
+2013/04/01 20:34:57 [error] [exception.CException] exception 'CException' with message 'ApiController and its behaviors do not have a method or closure named "_getStatusCodeMessage".' in D:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('_getStatusCodeM...', Array)
+#1 D:\xampp\htdocs\rest\protected\controllers\ApiController.php(69): ApiController->_getStatusCodeMessage(200)
+#2 D:\xampp\htdocs\rest\protected\controllers\ApiController.php(42): ApiController->_sendResponse(200, 'No items where ...')
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): ApiController->actionList()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('list')
+#8 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('api/list')
+#9 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\rest\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/rest/index.php/api/images
+---
+2013/04/01 20:49:24 [error] [system.db.CDbCommand] Error in preparing SQL: CREATE TABLE `Image` (
+	`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+	`name` varchar(255) NOT NULL,
+	`extension` varchar(255) NOT NULL,
+	`filename` varchar(255) NOT NULL,
+	`byteSize` int(10) unsigned NOT NULL,
+	`mimeType` varchar(255) NOT NULL,
+	`created` timestamp NULL DEFAULT NULL,
+	PRIMARY KEY (`id`)
+)
+in D:\xampp\htdocs\rest\protected\modules\image\components\ImgInstaller.php (137)
+in D:\xampp\htdocs\rest\protected\modules\image\components\ImgInstaller.php (44)
+in D:\xampp\htdocs\rest\protected\modules\image\controllers\InstallController.php (41)
+2013/04/01 20:49:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "unsigned": syntax error. The SQL statement executed was: CREATE TABLE `Image` (
+	`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+	`name` varchar(255) NOT NULL,
+	`extension` varchar(255) NOT NULL,
+	`filename` varchar(255) NOT NULL,
+	`byteSize` int(10) unsigned NOT NULL,
+	`mimeType` varchar(255) NOT NULL,
+	`created` timestamp NULL DEFAULT NULL,
+	PRIMARY KEY (`id`)
+).
+in D:\xampp\htdocs\rest\protected\modules\image\components\ImgInstaller.php (137)
+in D:\xampp\htdocs\rest\protected\modules\image\components\ImgInstaller.php (44)
+in D:\xampp\htdocs\rest\protected\modules\image\controllers\InstallController.php (41)
+2013/04/01 20:50:23 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'image.image' doesn't exist. The SQL statement executed was: SELECT COUNT(*) FROM Image.
+in D:\xampp\htdocs\rest\protected\modules\image\components\ImgInstaller.php (159)
+in D:\xampp\htdocs\rest\protected\modules\image\controllers\InstallController.php (37)
+in D:\xampp\htdocs\rest\index.php (13)
+2013/04/02 09:44:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\rest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rest/index.php/images
+---
+2013/04/02 09:44:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\rest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rest/index.php/images
+---
+2013/04/02 09:44:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\rest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rest/index.php/images
+---
+2013/04/02 10:32:44 [error] [php] Undefined variable: _FILE (D:\xampp\htdocs\rest\protected\controllers\ApiController.php:62)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\rest\index.php(13): CWebApplication->run()
+REQUEST_URI=/rest/index.php/api/images
+in D:\xampp\htdocs\rest\protected\controllers\ApiController.php (62)
+in D:\xampp\htdocs\rest\index.php (13)
+2013/04/02 10:33:10 [error] [php] Undefined variable: _FILE (D:\xampp\htdocs\rest\protected\controllers\ApiController.php:62)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\rest\index.php(13): CWebApplication->run()
+REQUEST_URI=/rest/index.php/api/images
+in D:\xampp\htdocs\rest\protected\controllers\ApiController.php (62)
+in D:\xampp\htdocs\rest\index.php (13)
+2013/04/02 10:36:40 [error] [php] Undefined variable: model (D:\xampp\htdocs\rest\protected\views\site\index.php:3)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 D:\xampp\htdocs\rest\protected\controllers\SiteController.php(32): SiteController->render()
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\rest\index.php(13): CWebApplication->run()
+REQUEST_URI=/rest/index.php
+in D:\xampp\htdocs\rest\protected\views\site\index.php (3)
+in D:\xampp\htdocs\rest\protected\controllers\SiteController.php (32)
+in D:\xampp\htdocs\rest\index.php (13)
+2013/04/02 10:45:31 [error] [php] Undefined variable: file (D:\xampp\htdocs\rest\protected\controllers\ApiController.php:68)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\rest\index.php(13): CWebApplication->run()
+REQUEST_URI=/rest/index.php/api/images
+in D:\xampp\htdocs\rest\protected\controllers\ApiController.php (68)
+in D:\xampp\htdocs\rest\index.php (13)
+2013/04/02 10:46:02 [error] [php] Undefined variable: file (D:\xampp\htdocs\rest\protected\controllers\ApiController.php:68)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\rest\index.php(13): CWebApplication->run()
+REQUEST_URI=/rest/index.php/api/images
+in D:\xampp\htdocs\rest\protected\controllers\ApiController.php (68)
+in D:\xampp\htdocs\rest\index.php (13)
+2013/04/02 10:46:43 [error] [php] Undefined variable: file (D:\xampp\htdocs\rest\protected\controllers\ApiController.php:68)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\rest\index.php(13): CWebApplication->run()
+REQUEST_URI=/rest/index.php/api/images
+in D:\xampp\htdocs\rest\protected\controllers\ApiController.php (68)
+in D:\xampp\htdocs\rest\index.php (13)
+2013/04/02 10:47:53 [error] [php] Undefined variable: file (D:\xampp\htdocs\rest\protected\controllers\ApiController.php:68)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\rest\index.php(13): CWebApplication->run()
+REQUEST_URI=/rest/index.php/api/images
+in D:\xampp\htdocs\rest\protected\controllers\ApiController.php (68)
+in D:\xampp\htdocs\rest\index.php (13)
+2013/04/02 10:48:04 [error] [php] Undefined variable: file (D:\xampp\htdocs\rest\protected\controllers\ApiController.php:68)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\rest\index.php(13): CWebApplication->run()
+REQUEST_URI=/rest/index.php/api/images
+in D:\xampp\htdocs\rest\protected\controllers\ApiController.php (68)
+in D:\xampp\htdocs\rest\index.php (13)
+2013/04/02 10:49:21 [error] [php] Undefined variable: file (D:\xampp\htdocs\rest\protected\controllers\ApiController.php:68)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\rest\index.php(13): CWebApplication->run()
+REQUEST_URI=/rest/index.php/api/images
+in D:\xampp\htdocs\rest\protected\controllers\ApiController.php (68)
+in D:\xampp\htdocs\rest\index.php (13)
+2013/04/02 10:49:53 [error] [php] Undefined variable: file (D:\xampp\htdocs\rest\protected\controllers\ApiController.php:68)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\rest\index.php(13): CWebApplication->run()
+REQUEST_URI=/rest/index.php/api/images
+in D:\xampp\htdocs\rest\protected\controllers\ApiController.php (68)
+in D:\xampp\htdocs\rest\index.php (13)
+2013/04/02 10:50:02 [error] [php] Undefined variable: file (D:\xampp\htdocs\rest\protected\controllers\ApiController.php:68)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\rest\index.php(13): CWebApplication->run()
+REQUEST_URI=/rest/index.php/api/images
+in D:\xampp\htdocs\rest\protected\controllers\ApiController.php (68)
+in D:\xampp\htdocs\rest\index.php (13)
+2013/04/02 10:50:48 [error] [php] Undefined variable: file (D:\xampp\htdocs\rest\protected\controllers\ApiController.php:68)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(287): ApiController->runAction()
+#1 D:\xampp\htdocs\yii\framework\web\CController.php(266): ApiController->runActionWithFilters()
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): ApiController->run()
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\rest\index.php(13): CWebApplication->run()
+REQUEST_URI=/rest/index.php/api/images
+in D:\xampp\htdocs\rest\protected\controllers\ApiController.php (68)
+in D:\xampp\htdocs\rest\index.php (13)
+2013/04/02 10:56:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "rest".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('rest')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\rest\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rest/index.php/rest
+---
