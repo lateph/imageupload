@@ -38,7 +38,7 @@ class ApiController extends Controller
 					foreach($models as $model)
 						$rows[] = $model->attributes;
 					// Send the response
-					$this->_sendResponse(200, CJSON::encode($rows),'text/json');
+					$this->_sendResponse(200, CJSON::encode($rows),'application/json');
 				}
 				break;
 			default:
